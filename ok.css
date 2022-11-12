@@ -127,7 +127,7 @@ nav .nav-list .nav-link {
         position: fixed;
         top: 55vh;
         color: aliceblue;
-        padding-left: 3.7vw;
+        padding-left: 0vw;
     }
     .first{
         left: 9%;
