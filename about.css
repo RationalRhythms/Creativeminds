@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+
+.big{
+    position: fixed;
+    top: 10vh;
+    left: 45vw;
+    color: azure;
+    font-family: 'Jost', sans-serif;
+    font-size: 3.3em;
+}
+
+.small{
+    position: fixed;
+    left: 0;
+    top: 28vh;
+    padding: 5vw;
+    right: 50vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.4em ;
+    color: darkgray;
+}
+
+body{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.438), rgba(4, 9, 30, 0.63)),url("https://i0.hippopx.com/photos/548/90/482/sunrise-phu-quoc-island-ocean-preview.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100% 100vh;
+}
+
+img{
+    position: fixed;
+    right: 0;
+    width: 50vw;
+    height: 30vh;
+    top: 30vh;
+}
+
+
+@media (max-width: 600px) {
+    .big{
+        top: 9vh;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        font-size: 3em;
+        left: 4.3rem;
+    }
+    .small{
+        position: fixed;
+        left: 0;
+        top: 35vh;
+        padding: 4vw;
+        right: 40vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:1em ;
+        color: darkgray;
+    }
+    img{
+        position: fixed;
+        right: 0;
+        width: 48vw;
+        height: 20vh;
+        top: 40vh;
+    }
+}
+
