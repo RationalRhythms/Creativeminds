@@ -83,6 +83,9 @@ function chatbotvoice(message){
     if(message.includes('How do you do')){
         speech.text = "How do you do";
      }
+    if(message.includes('bye')){
+        speech.text = "Bye, have a good day.";
+     }
     window.speechSynthesis.speak(speech);
     chatareamain.appendChild(showchatbotmsg(speech.text));
 }
