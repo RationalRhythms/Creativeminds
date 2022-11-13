@@ -82,7 +82,7 @@ function chatbotvoice(message){
         speech.text = "Bye, have a good day.";
      }
      if(message.includes('play games here')){
-       speech.text = "Tic tac toe, maemory game and word scramble are fun and nostalgic gamees. Please enjoy them.";
+       speech.text = "Tic tac toe, memory game and word scramble are fun and nostalgic games. Please enjoy them.";
     }
      if(message.includes('were you built')){
        speech.text = "Using Javascript and API";
