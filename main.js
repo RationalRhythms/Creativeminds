@@ -87,6 +87,9 @@ function chatbotvoice(message){
      if(message.includes('were you built')){
        speech.text = "Using Javascript and API";
     }
+      if(message.includes('read')){
+       speech.text = "I read books like Guliver Travels and Treasure Island";
+    }
     window.speechSynthesis.speak(speech);
     chatareamain.appendChild(showchatbotmsg(speech.text));
 }
