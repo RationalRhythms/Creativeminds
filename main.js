@@ -5,8 +5,7 @@ let chatareaouter = document.querySelector('.chatarea-outer');
 let intro = ["Hello, I am Xion", "Hi, I am a Robo", "Hello, My name is Xion"];
 let help = ["How may I assist you?","How can i help you?","What I can do for you?"];
 let greetings = ["I am good, you little piece of love", "I am fine, what about you?", "Don't want to talk right now.", "I am good."];
-let hobbies = ["I love to talk with humans", "I like to make friends like you", "I like cooking"];
-let pizzas = ["Which type of pizza do you like?", "I can make a pizza for you", "I would love to make a pizza for you", "Would you like cheese pizza?"];
+let hobbies = ["I love to talk with humans", "I like to make friends like you", "I like reading."];
 let thank = ["Most welcome","Not an issue","Its my pleasure","Mention not"];
 let closing = ['Ok bye-bye','As you wish, bye take-care','Bye-bye, see you soon..'];
 let info = ["You can talk to me here and play brain teasers."];
@@ -53,10 +52,6 @@ function chatbotvoice(message){
         let finalresult = hobbies[Math.floor(Math.random() * hobbies.length)];
         speech.text = finalresult;
     }
-    if(message.includes('pizza')){
-        let finalresult = pizzas[Math.floor(Math.random() * pizzas.length)];
-        speech.text = finalresult;
-    }
     if(message.includes('thank you' || 'thank you so much')){
         let finalresult = thank[Math.floor(Math.random() * thank.length)];
         speech.text = finalresult;
@@ -86,6 +81,12 @@ function chatbotvoice(message){
     if(message.includes('bye')){
         speech.text = "Bye, have a good day.";
      }
+     if(message.includes('play games here')){
+       speech.text = "Tic tac toe, maemory game and word scramble are fun and nostalgic gamees. Please enjoy them.";
+    }
+     if(message.includes('were you built')){
+       speech.text = "Using Javascript and API";
+    }
     window.speechSynthesis.speak(speech);
     chatareamain.appendChild(showchatbotmsg(speech.text));
 }
