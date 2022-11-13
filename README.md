@@ -13,3 +13,9 @@ Bot
 -bot.html
 -main.js
 -fonts
+-images
+-style.css
+
+Brain teasers 
+-brain.html
+-brain.css
